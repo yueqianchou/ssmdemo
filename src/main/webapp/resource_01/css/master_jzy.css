@@ -1,0 +1,154 @@
+@charset "utf-8";
+.login_set_outbg_body {
+    overflow: hidden;
+}
+.login_set_outbg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: url(../images/jzy/loginbgs.png) center center no-repeat;
+    background-size: cover;
+}
+.login_set_outbg_from {
+    width: 1288px;
+    height: 443px;
+    background: url(../images/jzy/loginbg.png) center center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -140px;
+    margin-left: -644px;
+}
+.login_set_outbg_from_titles {
+    font-size: 26px;
+    color: #d9e0ef;
+    text-align: center;
+    padding-top: 35px;
+}
+.login_set_outbg_from_inputs {
+    position: absolute;
+    left: 535px;
+    width: 270px;
+    border: 0px;
+    height: 35px;
+    background: none;
+    color: #b8c2d7;
+    font-size: 14px;
+    outline: 0;
+}
+.login_set_outbg_from_inputs.stya {
+    top: 97px;
+}
+.login_set_outbg_from_inputs.styb {
+    top: 151px;
+}
+.login_set_outbg_from_yanzm {
+    position: absolute;
+    top: 204px;
+    width: 320px;
+    left: 487px;
+    color: #a6b7ce;
+    font-size: 14px;
+}
+.login_set_outbg_from_yanzm_impt {
+    width: 64px;
+    height: 26px;
+    border: 1px solid #2150a4;
+    background: #d9dee7;
+    margin-right: -3px;
+    outline: 0;
+}
+.login_set_outbg_from_yanzm span, .login_set_outbg_from_yanzm input, .login_set_outbg_from_yanzm img {
+    vertical-align: middle;
+}
+.login_set_outbg_from_yanzm .link {
+    float: right;
+    line-height: 30px;
+    color: #a6b7ce;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.login_set_outbg_from_btn {
+    position: absolute;
+    width: 320px;
+    left: 479px;
+    height: 46px;
+    bottom: 135px;
+    background: url(../images/jzy/btns-login.png) center center no-repeat;
+    cursor: pointer;
+}
+.login_set_outbg_from_btn:hover {
+    background: url(../images/jzy/btns-login-h.png) center center no-repeat;
+}
+.login_set_outbg_from_tp {
+    position: absolute;
+    bottom: -30px;
+    width: 1284px;
+    height: 253px;
+    left: 50%;
+    margin-left: -642px;
+    background: url(../images/jzy/pintu.png) center center no-repeat;
+}
+.login_set_outbg_from_logo {
+    position: absolute;
+    top: -220px;
+    left: 50%;
+    margin-left: -450px;
+    width: 900px;
+    height: 165px;
+    background: url(../images/jzy/logo.png) center center no-repeat;
+}
+.superMlis.use > li {
+    width: calc((100% - 27px) / 3);
+    margin: 0px;
+    margin-left: 9px;
+}
+.superMlis.use > li .superInIcon.use_a {
+    background: url(../images/jzy/usein_1.png) center center no-repeat;
+}
+.superMlis.use > li:hover .superInIcon.use_a, .superMlis.use > li.active .superInIcon.use_a {
+    background: url(../images/jzy/usein_1_h.png) center center no-repeat;
+}
+.superMlis.use > li .superInIcon.use_b {
+    background: url(../images/jzy/usein_2.png) center center no-repeat;
+}
+.superMlis.use > li:hover .superInIcon.use_b, .superMlis.use > li.active .superInIcon.use_b {
+    background: url(../images/jzy/usein_2_h.png) center center no-repeat;
+}
+.superMlis.use > li .superInIcon.use_c {
+    background: url(../images/jzy/usein_3.png) center center no-repeat;
+}
+.superMlis.use > li:hover .superInIcon.use_c, .superMlis.use > li.active .superInIcon.use_c {
+    background: url(../images/jzy/usein_3_h.png) center center no-repeat;
+}
+.superMlis.use > li:hover .use_intop, .superMlis.use > li.active .use_intop {
+    background: url(../images/jzy/linhover.png) repeat-x #275fc1!important;
+}
+.use_intop .superIntxt {
+    font-size: 16px;
+    font-weight: bold;
+}
+.use_intop_px_left {
+    float: left;
+    padding-left: 22px;
+    padding-top: 8%;
+    font-size: 16px;
+    color: #b1cefc;
+}
+.use_intop_px_right {
+    float: right;
+    padding-right: 22px;
+    padding-top: 8%;
+    font-size: 16px;
+    line-height: 24px;
+}
+.use_intop_px_right span {
+    vertical-align: sub;
+    font-size: 12px;
+}
+.use_intop_px_right span.big {
+    font-size: 32px;
+    color: #2bd781;
+}
