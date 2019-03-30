@@ -2,13 +2,13 @@
     angular.module('app').service('indexService',
         function ($http,$log) {
         return {
-            testController: function () {
-                var url = 'ceshi.do';
-                return $http.get(url);
+            testController: function (params) {
+                var url = 'testController/view';
+                return $http.post(url,params);
             },
             getEntInfo2: function () {
-                var url = 'ceshi.do';
-                return $http.get(url);
+                var url = 'testController/view';
+                return $http.post(url,params);
             }
         }
 

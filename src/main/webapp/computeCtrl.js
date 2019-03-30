@@ -2,7 +2,7 @@
     angular.module('app').controller('computeCtrl',['$scope','computeService','Upload',
         function ($scope,computeService,Upload) {
         console.log('computeCtrl');
-        $scope.compute='神州精盾K470P-i7d3';
+        $scope.compute='这里是文件上传下载页面';
 
 
         $scope.openSelectFile=function(){
@@ -14,23 +14,23 @@
                return;
            }
             Upload.upload({
-               url:'test/upload',
+               url:'testController/test/upload',
                method:'post',
-               file:$file
+               file:$file[0]
            }).success(function (data) {
-               console.log('上传结果--->' ,data);
                $scope.upMessage=data.message;
+               swal(data.message);
 
            })
 
         }
 
         $scope.downLoadFile=function(){
-            window.location.href="test/downLoadFile";
+            window.location.href="testController/test/downLoadFile";
         }
 
             $scope.downLoadFile_doc=function(){
-                window.location.href="test/downLoadFile_doc";
+                window.location.href="testController/test/downLoadFile_doc";
             }
 
 

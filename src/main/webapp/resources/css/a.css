@@ -13,4 +13,13 @@
     color: blue;
 }
 
+.body {
+    background-image: url(../bg.png)!important;
+}
 
+.mapDiv {
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+    margin-top:30px;
+}

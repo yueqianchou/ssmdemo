@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2017/9/14.
+ * Created by duanww
  */
 (function () {
     angular.module('map', []);
@@ -50,7 +50,7 @@
 
                         //联想搜索框
                         var autoOptions = {
-                            city: "镇江市", //城市，默认全国
+                            city: "襄阳市", //城市，默认全国
                             input: "tipinput"//使用联想输入的input的id
                         };
                         //构造地点查询类

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
     <meta charset="UTF-8">
     <title>html首页</title>
@@ -49,34 +49,60 @@
     </script>
 
     <style type="text/css">
-        .amap-logo {  right: 0 !important;  left: auto !important;  display: none;  }
-        .amap-copyright {  right: 70px !important;  left: auto !important;  }
+        .amap-logo {
+            right: 0 !important;
+            left: auto !important;
+            display: none;
+        }
+
+        .amap-copyright {
+            right: 70px !important;
+            left: auto !important;
+        }
     </style>
 
+    <!--一个消息提示框插件-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
-<body ng-app="app" ng-controller="indexCtrl">
-    <center>
-        {{welcome}}
-        <button  ng-click="testController()" class="text">点这里</button>{{message}}<br>
-        <!--<li ><a ng-click="$state.go('compute')">电脑</a></li><br>-->
-        <li ><a ui-sref="compute">上传页</a></li><br>
-        <button ng-click="showMap=true" ng-dclick="showMap=false">查看经纬度</button>
-    </center>
-
-    <div class="pformList marig22">
-        <span class="pformTit" style="width: 88px;">经度：</span>
-        <input type="text" class="pFormput"
-               style="width:66px;float: left" ng-model="thisProject.longitude" input-verify="{type:'verifyIsNum',required:true}">
-        <span class="pformTit" style="width: 60px;float: left">纬度：</span>
-        <input type="text" class="pFormput"
-               style="width:66px" ng-model="thisProject.latitude" input-verify="{type:'verifyIsNum',required:true}">
+<body ng-app="app" ng-controller="indexCtrl" class="body">
+    <!--左侧地图-->
+    <div style="display: inline-block;width:40%;margin-left:2px;">
+        <div id="mapGaoDe" class="mapDiv"></div>
+        <center>
+            <div class="pformList marig22" style="background-color: whitesmoke;">
+                <span class="pformTit" style="width:60px;">经度：</span>
+                <input type="text" class="pFormput"
+                       style="width:66px;float: left" ng-model="thisProject.longitude">
+                <span class="pformTit" style="width: 60px;float: left">纬度：</span>
+                <input type="text" class="pFormput"
+                       style="width:66px" ng-model="thisProject.latitude">
+                <button ng-click="showMap=true">查看经纬度</button>
+            </div>
+        </center>
     </div>
-    <div ng-show="showMap" style=" position: absolute;left: 50%;top:50%" class="">
+
+
+    <div ng-show="showMap" style=" position: absolute;left: 50%;top:50%;z-index:100">
         <a-map></a-map>
     </div>
 
-    <div id="mapContainer" style="width:700px;height:600px;margin: 0 auto"></div>
+    <!--右侧-->
+    <div style="float: right;width:55%;margin-top:5%;">
+        <center>
+            {{welcome}}<br>
+            <button ng-click="testController()" class="text">导入数据到数据库</button>
+            <button ng-click="downloadStudent()" class="text">导出学生表</button>
+            {{message}}<br><br><br>
 
-    <div ui-view></div>
+                两种跳转页面的方式
+                <a ng-click="$state.go('compute')" style="color:goldenrod">上传页</a>
+                <a ui-sref="compute" style="color:goldenrod">上传页</a>
+            <br>
+
+        </center>
+        <div ui-view></div>
+    </div>
+
+
 </body>
 </html>
