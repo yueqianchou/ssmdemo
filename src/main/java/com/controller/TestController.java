@@ -41,8 +41,8 @@ public class TestController {
     }
 
     @RequestMapping(value = "view", method = RequestMethod.POST)
-    public @ResponseBody
-    JSONObject ceshi(@RequestBody List<JSONObject> students) {
+    @ResponseBody
+    public JSONObject ceshi(@RequestBody List<JSONObject> students) {
         JSONObject result = new JSONObject();
         try {
             iStudentService.insertStudent(students);
